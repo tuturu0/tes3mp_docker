@@ -6,6 +6,6 @@ WORKDIR /opt/tes3mp/TES3MP-server
 
 COPY . /opt/tes3mp/TES3MP-server
 
-EXPOSE 25565
+EXPOSE 25565/udp
 
 CMD  ["./tes3mp-server"]
