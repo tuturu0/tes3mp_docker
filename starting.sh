@@ -13,7 +13,7 @@ if [[ -d /opt/tes3mp/TES3MP-server/ ]] && [[ -e /opt/tes3mp/TES3MP-server/tes3mp
 then
         filename="/opt/tes3mp/TES3MP-server/tes3mp-server-default.cfg"
         echo "Please enter your server's password"
-        read ReplacePass
+        read -s ReplacePass
         sed -i "s/^password .*$/password = $ReplacePass/" $filename
         echo "Please enter your server's name"
         read ReplaceHostname
